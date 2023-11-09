@@ -1,5 +1,7 @@
 # A database of hourly wind speed and estimated generation for US
+
 ##### Corresponding author: Dev Millstein (dmillstein@lbl.gov)
+
 This repository provides the code used in creating the PLUSWIND repository (available at https://a2e.energy.gov/project/pluswind or http://doi.org/10.21947/1903602) described in Millstein, D. *et al*. A database of hourly wind speed and estimated generation for US (**insert full citation when plublished**)
 
 The repository is broken into three folders that correspond to the order the scripts were run.
@@ -10,28 +12,33 @@ The repository is broken into three folders that correspond to the order the scr
 Additional information on each script's function is included as comments in the scripts.
 
 ## Miscallaneous Notes:
+
 * In all code, the term ISO refers to both ISOs and RTOs
 
 ## Brief description of scripts
-##### downloadWindspeeds/
-download_ERA5.py - download ERA5 data.
 
-download_HRRR.py - download HRRR data.
+#### downloadWindspeeds/
 
-download_MERRA.r - download MERRA2 data.
+`download_ERA5.py` - download ERA5 data.
 
-##### createWindProfiles/
-windSpeedsToCF_singleYr.py - run wind speeds from ERA5/MERRA2/HRRR thought power curves, applying air density and loss corrections.
+`download_HRRR.py` - download HRRR data.
 
-getHourlyGenByIso.py - Joins modelled hourly plant level generation with reported ISO-wide hourly generation, along with doing some processing/filtering/formatting.
+`download_MERRA.r` - download MERRA2 data.
 
-getMonthlyGenByPlant.py - Joins modelled monthly plant level generation with reported data, along with some processing/filtering/formatting.
+#### createWindProfiles/
 
-curtAdjustHourlyGenByIso.py - run after getHourlyGenByIso.py. Adds curtailment to the reported gen output of getHourlyGenByIso
+`windSpeedsToCF_singleYr.py` - run wind speeds from ERA5/MERRA2/HRRR thought power curves, applying air density and loss corrections.
 
-curtAdjustMonthlyGenByPlant.py - run after getMonthlyGenByPlant.py. Adds curtailment data to the reported gen column of getMonthlyGenByPlant
+`getHourlyGenByIso.py` - Joins modelled hourly plant level generation with reported ISO-wide hourly generation, along with doing some processing/filtering/formatting.
 
-##### evaluateWindProfiles/
-plotDiurnalFigures_allUS.py - run after all scripts in downloadWindspeeds/ and createWindProfiles/. Creates plots of diurnal generation and coefficient of determination
+`getMonthlyGenByPlant.py` - Joins modelled monthly plant level generation with reported data, along with some processing/filtering/formatting.
 
-summaryStatsOfWindModels_v2.py - run after all scripts in downloadWindspeeds/ and createWindProfiles/. Creates all remaining figures and statistics
+`curtAdjustHourlyGenByIso.py` - run after getHourlyGenByIso.py. Adds curtailment to the reported gen output of getHourlyGenByIso
+
+`curtAdjustMonthlyGenByPlant.py` - run after getMonthlyGenByPlant.py. Adds curtailment data to the reported gen column of getMonthlyGenByPlant
+
+#### evaluateWindProfiles/
+
+`plotDiurnalFigures_allUS.py` - run after all scripts in downloadWindspeeds/ and createWindProfiles/. Creates plots of diurnal generation and coefficient of determination
+
+`summaryStatsOfWindModels_v2.py` - run after all scripts in downloadWindspeeds/ and createWindProfiles/. Creates all remaining figures and statistics
