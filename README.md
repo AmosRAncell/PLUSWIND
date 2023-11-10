@@ -14,6 +14,7 @@ Additional information on each script's function is included as comments in the 
 ## Miscallaneous Notes:
 
 * In all code, the term ISO refers to both ISOs and RTOs
+* **How to cite/acknowledge:** We want anyone to use the code here freely and, if the scripts in this repository play an important role in your research/work, please consider acknowledging it via the citation **insert full citation when published**.
 
 ## Brief description of scripts
 
