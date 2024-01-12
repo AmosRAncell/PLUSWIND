@@ -2,19 +2,24 @@
 
 ##### Corresponding author: Dev Millstein (dmillstein@lbl.gov)
 
-This repository provides the code used in creating the PLUSWIND repository (available at https://a2e.energy.gov/project/pluswind or http://doi.org/10.21947/1903602) described in Millstein, D. *et al*. A database of hourly wind speed and estimated generation for US (**insert full citation when plublished**)
+This repository provides the code used in creating the PLUSWIND repository (available at https://a2e.energy.gov/project/pluswind or http://doi.org/10.21947/1903602) described in Millstein, D., Jeong, S., Ancell, A. *et al*. A database of hourly wind speed and modeled generation for US wind plants based on three meteorological models. *Sci Data* **10**, 883 (2023). https://doi.org/10.1038/s41597-023-02804-w
+
+
 
 The repository is broken into three folders that correspond to the order the scripts were run.
 1. downloadWindspeeds - Contains the three scripts to download the meteorological data. This is the first step in creating the wind profiles.
 2. createWindProfiles - Contains the scripts to turn the downloaded meteorological data from Step 1 into the wind profiles provided in the PLUSWIND repository.
-3. evaluateWindProfiles - Contains the scripts to make the figures and statistics provided in Millstein, D. *et al*. (**insert full citation when published**)
+3. evaluateWindProfiles - Contains the scripts to make the figures and statistics provided in the paper cited above (https://doi.org/10.1038/s41597-023-02804-w)
 
 Additional information on each script's function is included as comments in the scripts.
 
 ## Miscallaneous Notes:
 
 * In all code, the term ISO refers to both ISOs and RTOs
-* **How to cite/acknowledge:** We want anyone to use the code here freely and, if the scripts in this repository play an important role in your research/work, please consider acknowledging it via the citation **insert full citation when published**.
+* **How to cite/acknowledge:** We want anyone to use the code here freely and, if the scripts in this repository play an important role in your research/work, please consider acknowledging it via the citation:
+Millstein, D., Jeong, S., Ancell, A. *et al*. A database of hourly wind speed and modeled generation for US wind plants based on three meteorological models. *Sci Data* **10**, 883 (2023). https://doi.org/10.1038/s41597-023-02804-w
+
+
 
 ## Brief description of scripts
 
